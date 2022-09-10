@@ -11,6 +11,7 @@ code = Category.create(name: 'Code')
 misc = Category.create(name: 'Misc')
 Category.create(name: 'School')
 
+
 puts "Seeding tasks..."
 
 # create tasks

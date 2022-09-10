@@ -24,8 +24,6 @@ class Application
       #task = category.tasks.build(text: hash["text"]) 
       task = Task.create(text: hash["text"], category_id: category.id)
 
-
-
       # abstract out
       return [200, { 'Content-Type' => 'application/json' }, [ {:message => "task successfully added", task: task.render_format}.to_json ]]
       

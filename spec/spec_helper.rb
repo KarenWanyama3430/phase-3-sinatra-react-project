@@ -11,8 +11,6 @@ RSpec.configure do |config|
     Rake::Task["db:migrate"].execute
   end
 
-
-  
   config.before(:suite) do
     DatabaseCleaner.clean_with(:truncation)
   end

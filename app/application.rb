@@ -33,7 +33,6 @@ class Application
       #   return [422, { 'Content-Type' => 'application/json' }, [ {:error => "task not  added"}.to_json ]]
       # end
 
-
     elsif req.path.match(/tasks/) && req.get?
       # abstracted out
       tasks = Task.render_all

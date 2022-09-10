@@ -16,8 +16,6 @@ class Task < ActiveRecord::Base
           end
     end
 
-
-    
     def render_format
             {
               id: self.id,

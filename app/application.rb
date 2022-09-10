@@ -17,7 +17,6 @@ class Application
         return [404, { 'Content-Type' => 'application/json' }, [ {:message => "task not found"}.to_json ]]
       end #destroy if statement
 
-
     elsif req.path.match(/tasks/) && req.post?
       
       hash = JSON.parse(req.body.read)
@@ -26,7 +25,7 @@ class Application
       task = Task.create(text: hash["text"], category_id: category.id)
 
 
-      
+
       # abstract out
       return [200, { 'Content-Type' => 'application/json' }, [ {:message => "task successfully added", task: task.render_format}.to_json ]]
       

@@ -1,7 +1,6 @@
 class Task < ActiveRecord::Base
     belongs_to :category 
 
-
     def self.find_by_path(path)
         task_id = path.split('/tasks/').last.to_i
         self.all.find(task_id)

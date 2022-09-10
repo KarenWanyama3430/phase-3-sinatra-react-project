@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 2021_04_07_214146) do
     t.string "name"
   end
 
+  
   create_table "tasks", force: :cascade do |t|
     t.string "text"
     t.integer "category_id"

@@ -11,4 +11,5 @@ end
 use Rack::JSONBodyParser
 
 # Our application
-run Application
+run Application.new
+
